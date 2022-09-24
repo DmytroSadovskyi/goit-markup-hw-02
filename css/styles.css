@@ -10,6 +10,7 @@
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
+  --some-text-color: #ffffff;
   --background-color: #ffffff;
   --accent-color: #2196f3;
 }
@@ -81,7 +82,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--background-color);
+  color: var(--some-text-color);
 }
 
 .hero-btn {
@@ -92,7 +93,7 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
-  color: var(--background-color);
+  color: var(--some-text-color);
   cursor: pointer;
 }
 
@@ -182,7 +183,7 @@ body {
 .filter-btn:hover,
 .filter-btn:focus {
   background-color: var(--accent-color);
-  color: var(--background-color);
+  color: var(--some-text-color);
 }
 
 /* приклади проектів */
@@ -201,4 +202,53 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+}
+
+/* підвал */
+
+.footer {
+  background-color: #2f303a;
+}
+
+.footer-logo {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--some-text-color);
+}
+
+.contacts .location {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--some-text-color);
+}
+
+.contacts .contact-link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.location:hover,
+.location:focus {
+  color: var(--accent-color);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
 }
