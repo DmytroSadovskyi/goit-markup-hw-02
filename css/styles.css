@@ -1,50 +1,60 @@
 /* основний колір: #757575 */
 /* другорядний колір: #212121 */
+/* фон( в залежності від секції):#2F303A, #F5F4FA; */
+/* чорний #000000 */
 /* білий: #FFFFFF */
 /* акцент: #2196F3 */
-
-.list {
-  list-style: none;
-}
+/* додатковий акцент: #188CE8 */
 
 :root {
   --primary-text-color: #757575;
-  --title-text-color: #212121;
-  --some-text-color: #ffffff;
-  --background-color: #ffffff;
+  --secondary-text-color: #212121;
+  --first-background-color: #2f303a;
+  --second-background-color: #f5f4fa;
+  --logo-header-color: #000000;
+  --primary-white-color: #ffffff;
   --accent-color: #2196f3;
+  --second-accent-color: #188ce8;
+  --white-semi-transparent: rgba(255, 255, 255, 0.6);
 }
 
 body {
-  background-color: var(--background-color);
+  background-color: var(--primary-white-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
 }
 
+/* утилітарний клас */
+.list {
+  list-style: none;
+}
+
 /* стилі хедера */
+
+/* логотип в хедері */
 
 .logo {
   font-family: 'Raleway';
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: #000000;
+  color: var(--logo-header-color);
 }
 
 .accent {
   color: var(--accent-color);
 }
 
+/* навігація */
+
 .site-nav .link {
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--title-text-color);
+  color: var(--secondary-text-color);
   text-decoration: none;
 }
 
@@ -53,8 +63,9 @@ body {
   color: var(--accent-color);
 }
 
+/* пошта і телефон */
+
 .header-contacts .link {
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -71,7 +82,9 @@ body {
 /* герой */
 
 .hero {
-  background-color: #2f303a;
+  /* фон задано тимчасово, для відображення кольору тексту */
+
+  background-color: var(--first-background-color);
   text-align: center;
 }
 
@@ -82,24 +95,23 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--some-text-color);
+  color: var(--primary-white-color);
 }
 
 .hero-btn {
-  font-family: 'Roboto';
-  font-style: normal;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
-  color: var(--some-text-color);
+  color: var(--primary-white-color);
   cursor: pointer;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #188ce8;
+  background-color: var(--second-accent-color);
 }
 
 /* прихований заголовок */
@@ -121,13 +133,12 @@ body {
 /* секція */
 
 .section-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
+  color: var(--secondary-text-color);
 }
 
 /* переваги */
@@ -138,7 +149,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--title-text-color);
+  color: var(--secondary-text-color);
 }
 
 .advantages .text {
@@ -150,12 +161,11 @@ body {
 /* команда */
 
 .team .team-title {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
+  color: var(--secondary-text-color);
 }
 
 .team .team-position {
@@ -167,38 +177,33 @@ body {
 /* фільтр */
 
 .filter .filter-btn {
-  font-family: 'Roboto';
-  font-style: normal;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
+  line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
-  background-color: #f5f4fa;
-  color: var(--title-text-color);
-  border: none;
+  background-color: var(--second-background-color);
+  color: var(--secondary-text-color);
   cursor: pointer;
 }
 
 .filter-btn:hover,
 .filter-btn:focus {
   background-color: var(--accent-color);
-  color: var(--some-text-color);
+  color: var(--primary-white-color);
 }
 
 /* приклади проектів */
 
 .examples .example-name {
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--title-text-color);
+  color: var(--secondary-text-color);
 }
 .examples .example-type {
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
@@ -207,40 +212,37 @@ body {
 /* підвал */
 
 .footer {
-  background-color: #2f303a;
+  /* фон задано тимчасово, для відображення кольору тексту */
+
+  background-color: var(--first-background-color);
 }
 
 .footer-logo {
   font-family: 'Raleway';
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: var(--some-text-color);
+  color: var(--primary-white-color);
 }
 
 .contacts .location {
-  font-family: 'Roboto';
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: var(--some-text-color);
+  color: var(--primary-white-color);
 }
 
 .contacts .contact-link {
-  font-family: 'Roboto';
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--white-semi-transparent);
 }
 
 .location:hover,
